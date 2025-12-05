@@ -24,7 +24,38 @@
         </div>
     </header>
 
-     <section class="photo-flex-section">
+    <section class="hero-slideshow">
+        <div class="slide active">
+            <img src="photos/ELWA.jpg" alt="ELWA">
+            <div class="slide-caption">
+                <h1>Welcome to Community Hub</h1>
+                <p>Connect, discover, and grow with your neighbors. Access information anytime, anywhere.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="photos/Liberia_libassa-beach-768x512.jpeg" alt="Libassa Beach">
+            <div class="slide-caption">
+                <h1>Events & Activities</h1>
+                <p>Stay updated on the latest happenings and join exciting community events.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="photos/Paynesville-Jahmale-2.jpeg" alt="Jahmale">
+            <div class="slide-caption">
+                <h1>Institutions & Services</h1>
+                <p>Find trusted institutions and essential services in your area.</p>
+            </div>
+        </div>
+        <button class="slide-btn prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="slide-btn next" onclick="plusSlides(1)">&#10095;</button>
+        <div class="slide-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <section class="photo-flex-section">
             <div class="photo-card">
                 <img src="blog photo/rehab center.jpg" alt="">
                 <h2 class="photo-heading">the opening of the rehability center</h2>
