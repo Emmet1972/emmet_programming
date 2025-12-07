@@ -27,3 +27,12 @@ function showSlides(n) {
     clearTimeout(slideTimer);
     slideTimer = setTimeout(function() { plusSlides(1); }, 4000); // Change image every 4 seconds
 }
+
+function sendMessage() {
+    let msg = document.getElementById("msgInput").value;
+    let messagesDiv = document.getElementById("messages");
+    let newMsg = document.createElement("p");
+    newMsg.textContent = "You: " + msg;
+    messagesDiv.appendChild(newMsg);
+    document.getElementById("msgInput").value = "";
+}
